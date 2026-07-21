@@ -1,0 +1,26 @@
+{
+  "id": "./index.html",
+  "name": "Flick FC Pro",
+  "short_name": "Flick Pro",
+  "description": "Tabletop football with favourite clubs, fifteen-season careers, European cups, World Cup, competitive, online and challenge modes.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#101a49",
+  "theme_color": "#101a49",
+  "categories": ["games", "sports"],
+  "icons": [
+    {"src": "icons/flick-pro-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/flick-pro-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/flick-pro-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Competitive Match", "short_name": "Competitive", "url": "./index.html?mode=competitive", "icons": [{"src": "icons/flick-pro-192.png", "sizes": "192x192"}]},
+    {"name": "Seasons Career", "short_name": "Seasons", "url": "./index.html?mode=seasons", "icons": [{"src": "icons/flick-pro-192.png", "sizes": "192x192"}]},
+    {"name": "Champions Cup", "short_name": "Champions Cup", "url": "./index.html?mode=ucl", "icons": [{"src": "icons/flick-pro-192.png", "sizes": "192x192"}]},
+    {"name": "Scenario Challenges", "short_name": "Challenges", "url": "./index.html?mode=challenges", "icons": [{"src": "icons/flick-pro-192.png", "sizes": "192x192"}]},
+    {"name": "Golden Goal Blitz", "short_name": "Golden Blitz", "url": "./index.html?mode=blitz", "icons": [{"src": "icons/flick-pro-192.png", "sizes": "192x192"}]}
+  ]
+}

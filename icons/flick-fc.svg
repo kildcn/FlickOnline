@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Flick FC">
+  <title>Flick FC</title>
+  <!--
+    Team Channels. Silver is .libraryHeader's own gradient with its hard mid-band
+    intact; the hairlines are #topbar's 42px rule. Red and blue channels quote
+    .side.red / .side.blue from the in-match HUD. The ball is the game's own
+    match ball: the six front-hemisphere pentagons of paintBallSphere()'s
+    icosahedral solid at theta 1.1, in the shipped `classic` skin.
+  -->
+  <defs>
+    <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".10" stop-color="#ffffff"/>
+      <stop offset=".11" stop-color="#d9dfe8"/><stop offset=".45" stop-color="#d9dfe8"/>
+      <stop offset=".46" stop-color="#929daf"/><stop offset=".54" stop-color="#929daf"/>
+      <stop offset=".55" stop-color="#edf1f6"/><stop offset="1" stop-color="#edf1f6"/>
+    </linearGradient>
+    <pattern id="hair" width="14" height="200" patternUnits="userSpaceOnUse">
+      <rect width="1" height="200" fill="#ffffff" opacity=".55"/>
+    </pattern>
+    <radialGradient id="ballBase" cx="50%" cy="50%" r="50%">
+      <stop offset=".08" stop-color="#fffdf0"/>
+      <stop offset=".6" stop-color="#f1ead2"/>
+      <stop offset="1" stop-color="#b0a88d"/>
+    </radialGradient>
+    <radialGradient id="ballLight" cx="35%" cy="30%" r="56%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".52"/>
+      <stop offset=".32" stop-color="#ffffff" stop-opacity=".05"/>
+      <stop offset=".7" stop-color="#0c140e" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#0a120c" stop-opacity=".46"/>
+    </radialGradient>
+    <clipPath id="ballClip"><circle cx="100" cy="100" r="61.6"/></clipPath>
+  </defs>
+
+  <rect width="200" height="200" fill="url(#rail)"/>
+  <rect width="200" height="200" fill="url(#hair)"/>
+  <rect x="0" y="0" width="19" height="200" fill="#f0384d"/>
+  <rect x="19" y="0" width="6" height="200" fill="#fff4d6"/>
+  <rect x="181" y="0" width="19" height="200" fill="#1457c7"/>
+  <rect x="175" y="0" width="6" height="200" fill="#fff4d6"/>
+  <rect x="0" y="195" width="200" height="5" fill="#071044"/>
+  <ellipse cx="100" cy="163" rx="48" ry="9" fill="#3d4757" opacity=".3"/>
+
+  <g transform="translate(100 98) scale(0.887) translate(-100 -100)">
+    <circle cx="100" cy="100" r="62" fill="url(#ballBase)"/>
+    <g clip-path="url(#ballClip)">
+      <path d="M159.2 115.8L156.5 132.5L140.7 149.4L133.7 143.0L145.1 122.3Z" fill="#2b2b2b"/>
+      <path d="M149.7 57.9L160.5 78.6L152.6 83.9L137.0 66.4L135.2 50.3Z" fill="#181818"/>
+      <path d="M97.5 147.4L104.2 160.2L84.7 162.6L65.9 151.4L73.8 142.0Z" fill="#181818"/>
+      <path d="M101.5 37.8L101.6 49.6L79.0 58.1L65.0 51.6L78.9 39.1Z" fill="#181818"/>
+      <path d="M55.4 86.8L56.1 111.2L44.3 120.1L36.3 101.2L43.1 80.7Z" fill="#181818"/>
+      <path d="M125.7 102.6L109.1 120.4L87.0 110.0L90.0 85.8L113.9 81.2Z" fill="#2b2b2b"/>
+    </g>
+    <circle cx="100" cy="100" r="62" fill="url(#ballLight)"/>
+    <path d="M160.8 95.1A61 61 0 0 1 78.9 157.2" fill="none" stroke="#dce8f5" stroke-opacity=".4" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="100" cy="100" r="61" fill="none" stroke="#b0a88d" stroke-opacity=".8" stroke-width="2.4"/>
+  </g>
+</svg>
